@@ -24,7 +24,7 @@
 				<Label text="Email" required="true"></Label>
 				<Input id="idEmail" width="50%"></Input>
 				<Label text="Contact" required="true"></Label>
-				<Input id="idContact" type="Number" width="50%"></Input>
+				<Input id="idContact" width="50%"></Input>
 				<ComboBox>
 				
 				<core:Item key="{Ind}" text="INDIA" />
