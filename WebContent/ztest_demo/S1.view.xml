@@ -1,0 +1,49 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="ztest_demo.S1"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:layout="Sap.ui.layout" 
+	xmlns:f="sap.ui.layout.form">
+	<Page title="Title">
+
+		<f:SimpleForm id="SimpleFormDisplay354" editable="false"
+			layout="ResponsiveGridLayout" title="New Application" labelSpanXL="3"
+			labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false"
+			emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0"
+			columnsXL="1" columnsL="1" columnsM="1"
+			singleContainerFullSize="false">
+			<f:content>
+				<Label text="Emp Id" required="true"></Label>
+				<Input id="iEmp" liveChange="onLiveChange" width="50%"></Input>
+				<Label text="First Name" required="true"></Label>
+				<Input id="idFirst"  liveChange="onNewChange" width="50%"></Input>
+				<Label text="Last Name" required="true"></Label>
+				<Input id="idLast"  liveChange="onNewChange" width="50%"></Input>
+				<Label text="Grade" required="true"></Label>
+				<Input id="idGrade" width="50%"></Input>
+				<Label text="Email" required="true"></Label>
+				<Input id="idEmail" width="50%"></Input>
+				<Label text="Contact" required="true"></Label>
+				<Input id="idContact" type="Number" width="50%"></Input>
+				<ComboBox>
+				
+				<core:Item key="{Ind}" text="INDIA" />
+				<core:Item key="{Aus}" text="INDIA" />
+				<core:Item key="{Pak}" text="INDIA" />
+				<core:Item key="{Mum}" text="INDIA" />
+			
+				
+			</ComboBox>
+			</f:content>
+		</f:SimpleForm>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button type="Accept" text="Submit" press="onSubmit" />
+				<Button type="Reject" text="Cancel" press="onCancel" />
+				<!--<Button icon="sap-icon://action" type="Transparent" press="onPress"/> -->
+				<!--<ToolbarSpacer/> -->
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>
